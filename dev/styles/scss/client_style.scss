@@ -1,0 +1,50 @@
+//Media Queries
+@import 'client_style_queries.scss';
+//Mixins Border-radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+//Mixins Vertical-align
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+//Mixins Placeholder
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+}
+//Placeholder
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */  
+  font-size: 0.9rem;   
+}
+::-moz-placeholder { /* Firefox 19+ */  
+  font-size: 0.9rem;
+}
+:-ms-input-placeholder { /* IE 10+ */  
+  font-size: 0.9rem;
+}
+:-moz-placeholder { /* Firefox 18- */  
+  font-size: 0.9rem;
+}
+*,
+html,
+body {}
