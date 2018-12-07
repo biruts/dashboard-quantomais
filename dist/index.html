@@ -6,14 +6,482 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <link rel="shortcut icon" href="images/icon_client.png">    
     <link rel="stylesheet" href="css/bootstrap.css">            
-    <link rel="stylesheet" href="css/animate.min.css">        
+    <link rel="stylesheet" href="css/animate.min.css"> 
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">        
     <link rel="stylesheet" href="css/ekko-lightbox.min.css">
     <link rel="stylesheet" href="css/client_style.min.css">    
     <title>QUANTO MAIS CONSÓRCIOS</title>  
   </head>
   <body>
     
-    <h1 class="text-center">Hello Project!</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-qtm">
+        <div class="container">
+            <a class="navbar-brand" href="#" target="_blank">
+                QuantoMais - Consórcios
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-qtm-content" aria-controls="nav-qtm-content" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-qtm-content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link 4</a>
+                    </li>
+                </ul>                
+            </div>      
+        </div>
+    </nav>
+
+    <div id="bodyContent">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-3">
+                    <aside class="user_filter">
+                        <ul class="nav nav-pills">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#infoUser" title="Informações do Usuário"><span><strong>Informações</strong> do Usuário</span> <i class="icon fas fa-user-circle"></i></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#filterAdv" title="Filtro Avançado"><span><strong>Filtro</strong> Avançado</span> <i class="icon fas fa-filter"></i></a>
+                          </li>
+                        </ul>
+
+                        <div class="tab-content">
+                          <div class="tab-pane container active" id="infoUser">
+                               <div class="profileUser d-flex flex-row">
+                                   <figure>
+                                       <img src="images/user.jpg" alt="nameUser" class="img-fluid imgProfile">
+                                   </figure>
+                                   <div class="nameUser">
+                                       <span>Fulano de Tal da Silva</span>
+                                   </div>
+                               </div> 
+
+                               <ul class="contactUser">
+                                   <li><i class="icon far fa-building"></i>Kawasaki</li>
+                                   <li><i class="icon fas fa-mobile-alt"></i>55 99 9 9999-9999 / 99 9 9999-9999</li>
+                                   <li><i class="icon fas fa-phone"></i>55 99 9999-9999</li>
+                                   <li><i class="icon fas fa-envelope"></i>email@email.com.br</li>
+                               </ul>
+
+                               <hr>
+
+                               <a href="#" class="btn btn-qtm" title="Enviar E-mail">Enviar E-mail</a>
+
+                               <hr>
+
+                               <h3><strong>Resumo</strong> do Negócio</h3>
+                               <ul class="brief businessBrief">
+                                   <li>
+                                       <div class="iconBrief">
+                                           <i class="icon fas fa-dollar-sign"></i>
+                                       </div>
+                                       <div class="infoBrief">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, distinctio!
+                                       </div>
+                                       <div class="parcelBrief">
+                                           R$ 999.999,99
+                                       </div>
+                                       <div class="dateBrief">
+                                           <span class="day">25</span>
+                                           <span class="month">Dez</span>
+                                       </div>
+                                   </li>
+
+                                   <li>
+                                       <div class="iconBrief">
+                                           <i class="icon fas fa-dollar-sign"></i>
+                                       </div>
+                                       <div class="infoBrief">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, distinctio!
+                                       </div>
+                                       <div class="parcelBrief">
+                                           R$ 999.999,99
+                                       </div>
+                                       <div class="dateBrief">
+                                           <span class="day">25</span>
+                                           <span class="month">Dez</span>
+                                       </div>
+                                   </li>
+                               </ul> 
+
+                               <hr>
+                                
+                               <h3><strong>Atividades</strong> Abertas</h3>
+                               <ul class="brief activitiesBrief">
+                                   <li>
+                                       <div class="iconBrief">
+                                           <i class="icon far fa-clock"></i>
+                                       </div>
+                                       <div class="infoBrief cl3">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eaque.
+                                       </div>
+                                       <div class="dateBrief">
+                                           <span class="day">25</span>
+                                           <span class="month">Dez</span>
+                                       </div>
+                                   </li>
+
+                                   <li>
+                                       <div class="iconBrief">
+                                           <i class="icon far fa-clock"></i>
+                                       </div>
+                                       <div class="infoBrief cl3">
+                                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, eaque.
+                                       </div>
+                                       <div class="dateBrief">
+                                           <span class="day">25</span>
+                                           <span class="month">Dez</span>
+                                       </div>
+                                   </li>
+                               </ul> 
+                          </div>
+                          <!-- End infoUser -->
+
+                          <div class="tab-pane container fade" id="filterAdv">
+                               <form action="" class="fiterQtm">
+                                   <div class="form-group">
+                                       <label for="nameItem">Nome do Bem:</label>
+                                       <input type="text" id="nameItem" class="form-control" placeholder="Nome do Bem">
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="admGroup">Administradoras:</label>
+                                       <select id="admGroup" class="form-control">
+                                       <!-- <select class="selectpicker" id="admGroup" multiple data-live-search="true" data-selected-text-format="count" title="Selecione"> -->
+                                          <option value="adm1">Adm 1</option>
+                                          <option value="adm2">Adm 2</option>
+                                          <option value="adm3">Adm 3</option>
+                                        </select>
+                                   </div>
+                                   <div class="form-group">
+                                       <label for="category">Categoria:</label>
+                                       <select id="category" class="form-control">
+                                       <!-- <select class="selectpicker" id="category" multiple data-live-search="true" data-selected-text-format="count" title="Selecione"> -->
+                                          <option value="cat1">Categoria 1</option>
+                                          <option value="cat2">Categoria 2</option>
+                                          <option value="cat3">Categoria 3</option>
+                                        </select>
+                                   </div>
+                                   <div class="form-row">
+                                       <div class="form-group col-12 col-md-12 mb-0">
+                                            <label for="vencimento">Vencimento:</label>
+                                       </div>    
+                                       <div class="form-group col-6 col-md-6">                                           
+                                           <input type="text" id="vencimento" class="form-control">
+                                       </div>
+                                       <div class="form-group col-6 col-md-6">
+                                           <input type="text" id="vencimento" class="form-control">
+                                       </div>
+                                   </div>
+                                   <div class="form-row">
+                                       <div class="form-group col-4 col-md-4">                                           
+                                           <label for="valCredit">Val. do Credito:</label>
+                                           <input type="text" id="valCredit" class="form-control">
+                                       </div>
+                                       <div class="form-group col-8 col-md-8">
+                                           <label for="plans">Planos:</label>
+                                           <select id="plans" class="form-control">
+                                           <!-- <select class="selectpicker" id="plans" multiple data-live-search="true" data-selected-text-format="count" title="Selecione"> -->
+                                              <option value="plan1">Plano 1</option>
+                                              <option value="plan2">Plano 2</option>
+                                              <option value="plan3">Plano 3</option>
+                                            </select>
+                                       </div>
+                                   </div>
+                                   <div class="form-group">
+                                        <label for="contMin">Contemplação Mínima:</label>
+                                        <input type="range" class="form-control-range" id="contMin" value="10" onchange="rangevalue.value=value"/>
+                                        <span class="highlight"></span>
+                                        <output id="rangevalue">10</output>
+                                   </div>
+                                   <div class="form-row">
+                                       <div class="form-group col-4 col-md-4">                                           
+                                           <label for="term">Prazo:</label>
+                                           <select id="term" class="form-control">
+                                           <!-- <select class="selectpicker" id="term" multiple data-live-search="true" data-selected-text-format="count" title="Selecione"> -->
+                                              <option value="plan1">Plano 1</option>
+                                              <option value="plan2">Plano 2</option>
+                                              <option value="plan3">Plano 3</option>
+                                            </select>                                           
+                                       </div>
+                                       <div class="form-group col-4 col-md-4">                                           
+                                           <label for="numberGroup">Nº do Grupo:</label>
+                                           <input type="text" id="numberGroup" class="form-control">
+                                       </div>
+                                       <div class="form-group col-4 col-md-4">
+                                           <label for="codItem">Cod. do Bem:</label>
+                                           <input type="text" id="codItem" class="form-control">
+                                       </div>
+                                   </div>
+
+                                   <hr>
+                                   <div class="form-row">  
+                                        <div class="form-group col-6 col-md-6">
+                                            <a href="#" class="btn btn-qtm">Limpar</a>
+                                        </div>
+                                        <div class="form-group col-6 col-md-6">
+                                            <button type="submit" class="btn btn-qtm">Enviar</button>
+                                        </div>
+                                   </div>     
+                               </form>         
+                          </div>                      
+                          <!-- End filterAdv -->
+                        </div>
+                    </aside>                      
+                </div>
+                            
+                <div class="col-12 col-md-6">
+                    <div class="listPlans">
+                        <h3><strong>Listagem</strong> de Planos</h3>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-3">
+                    <aside class="infoItem">
+                        <div class="itemProfile">
+                            <figure>
+                                <img src="images/bem-01.png" alt="Versys X650 ABS" class="img-fluid">
+                            </figure>
+                            <div class="d-flex justify-content-between">
+                                <div class="nameItem">
+                                    Versys<strong>X650 ABS</strong>
+                                </div>
+                                <div class="priceItem">
+                                    valor:<strong>R$55.990,42</strong>
+                                </div>
+                            </div>
+
+                            <hr>
+                    
+                            <table class="table table-striped table-bordered table-hover text-center table-qtm">
+                                <thead>
+                                    <tr>
+                                      <th scope="col">MESES</th>
+                                      <th scope="col">PARCELAS</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                      <td>100</td>
+                                      <td>R$ 999.999,99</td>
+                                    </tr>
+                                    <tr>
+                                      <td>80</td>
+                                      <td>R$ 999.999,99</td>
+                                    </tr>
+                                    <tr>
+                                      <td>72</td>
+                                      <td>R$ 999.999,99</td>
+                                    </tr>
+                                    <tr>
+                                      <td>60</td>
+                                      <td>R$ 999.999,99</td>
+                                    </tr>
+                                    <tr>
+                                      <td>50</td>
+                                      <td>R$ 999.999,99</td>
+                                    </tr>
+                                    <tr>
+                                      <td>36</td>
+                                      <td>R$ 999.999,99</td>
+                                    </tr>
+                                </tbody>    
+                            </table>  
+
+                             <hr>
+
+                            <form action="" class="caractItem">
+                                <div class="form-group">
+                                   <h3><strong>Caracteristicas</strong></h3>
+                                   <select id="caracList" class="form-control">
+                                   <!-- <select class="selectpicker" id="caracList" multiple data-live-search="true" data-selected-text-format="count" title="Selecione"> -->
+                                      <option value="carac1">Caracteristica 1</option>
+                                      <option value="carac2">Caracteristica 2</option>
+                                      <option value="carac3">Caracteristica 3</option>
+                                    </select>
+                               </div>
+                               <p class="caracteristics">
+                                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos at accusamus reiciendis beatae voluptate consectetur tempora voluptas odit incidunt perferendis, repellat molestias illum, porro voluptatum inventore laborum consequuntur dolor doloribus!
+                               </p>
+                            </form>
+                            
+                            <hr>    
+
+                            <div class="rivalItem">
+                                <h3><strong>Concorrentes</strong></h3>
+                                
+                                <table class="table table-striped table-bordered table-hover table-qtm">
+                                    <thead>
+                                        <tr>
+                                          <th scope="col">MOTOS</th>
+                                          <th scope="col" class="text-center">COMP.</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                          <td>Lorem ipsum dolor sit amet.</td>
+                                          <td><input type="checkbox" name="rival1" value="moto1"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Lorem ipsum dolor sit amet.</td>
+                                          <td><input type="checkbox" name="rival2" value="moto2"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Lorem ipsum dolor sit amet.</td>
+                                          <td><input type="checkbox" name="rival3" value="moto3"></td>
+                                        </tr>
+                                        <tr>
+                                          <td>Lorem ipsum dolor sit amet.</td>
+                                          <td><input type="checkbox" name="rival4" value="moto4"></td>
+                                        </tr>
+                                    </tbody>    
+                                </table>
+                            
+                                <div class="text-right">
+                                    <a href="#" class="btn btn-qtm" title="Comparar">Comparar</a>
+                                </div>    
+                            
+                            </div>
+                        </div>
+                        <!-- End itemProfile -->
+
+                        <hr> 
+
+                        <div class="rivalPlans">
+                            <h3><strong>Comparar</strong> Planos</h3>
+
+                            <ul class="brief plansBrief">
+                               
+                               <li class="plTop">
+                                   <div class="iconBrief">
+                                       <i class="icon fas fa-dollar-sign"></i>
+                                   </div>
+                                   <div class="infoBrief">
+                                       <strong>Plano</strong> Top
+                                   </div>
+                                   <div class="parcelBrief">
+                                       R$ 999.999,99
+                                   </div>
+                                   <a href="#" class="removeBrief" title="Remover Plano"><i class="far fa-times-circle"></i></a>
+                               </li>
+
+                               <li class="plNor">
+                                   <div class="iconBrief">
+                                       <i class="icon fas fa-dollar-sign"></i>
+                                   </div>
+                                   <div class="infoBrief">
+                                       <strong>Plano</strong> Normal
+                                   </div>
+                                   <div class="parcelBrief">
+                                       R$ 999.999,99
+                                   </div>
+                                   <a href="#" class="removeBrief" title="Remover Plano"><i class="far fa-times-circle"></i></a>
+                               </li>
+
+                               <li class="plRes">
+                                   <div class="iconBrief">
+                                       <i class="icon fas fa-dollar-sign"></i>
+                                   </div>
+                                   <div class="infoBrief">
+                                       <strong>Plano</strong> Residual
+                                   </div>
+                                   <div class="parcelBrief">
+                                       R$ 999.999,99
+                                   </div>
+                                   <a href="#" class="removeBrief" title="Remover Plano"><i class="far fa-times-circle"></i></a>
+                               </li>
+
+                               <li class="plFac">
+                                   <div class="iconBrief">
+                                       <i class="icon fas fa-dollar-sign"></i>
+                                   </div>
+                                   <div class="infoBrief">
+                                       <strong>Plano</strong> Fácil
+                                   </div>
+                                   <div class="parcelBrief">
+                                       R$ 999.999,99
+                                   </div>
+                                   <a href="#" class="removeBrief" title="Remover Plano"><i class="far fa-times-circle"></i></a>
+                               </li>
+
+                               <li class="plEsp">
+                                   <div class="iconBrief">
+                                       <i class="icon fas fa-dollar-sign"></i>
+                                   </div>
+                                   <div class="infoBrief">
+                                       <strong>Plano</strong> Especial
+                                   </div>
+                                   <div class="parcelBrief">
+                                       R$ 999.999,99
+                                   </div>
+                                   <a href="#" class="removeBrief" title="Remover Plano"><i class="far fa-times-circle"></i></a>
+                               </li>
+
+                               <li class="plPre">
+                                   <div class="iconBrief">
+                                       <i class="icon fas fa-dollar-sign"></i>
+                                   </div>
+                                   <div class="infoBrief">
+                                       <strong>Plano</strong> Premium
+                                   </div>
+                                   <div class="parcelBrief">
+                                       R$ 999.999,99
+                                   </div>
+                                   <a href="#" class="removeBrief" title="Remover Plano"><i class="far fa-times-circle"></i></a>
+                               </li>
+                           </ul> 
+
+                           <div class="text-right">
+                                <a href="#" class="btn btn-qtm" title="Comparar Plano">Comparar Plano</a>
+                            </div> 
+                        </div>
+                        <!-- End rivalPlans -->
+
+                        <hr>
+
+                        <div class="genProposal">
+                            <h3><strong>Gerar</strong> Proposta</h3>
+
+                            <div class="proposal">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="proEmail">
+                                  <label class="form-check-label" for="proEmail">
+                                    Enviar por E-mail
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="proWhatsapp">
+                                  <label class="form-check-label" for="proWhatsapp">
+                                    Enviar por Whatsapp
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="proPdf">
+                                  <label class="form-check-label" for="proPdf">
+                                    Gerar PDF
+                                  </label>
+                                </div>
+                            </div>
+
+                            <div class="text-right mt-4">
+                                <a href="#" class="btn btn-qtm" title="Gerar Proposta">Gerar Proposta</a>
+                            </div> 
+                        </div>
+                        <!-- End genProposal -->                        
+                    </aside>                    
+                </div>
+            </div>
+        </div>
+    </div>
     
     <script src="js/lib.js"></script>    
     <script src="js/app.min.js"></script>        

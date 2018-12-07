@@ -1,5 +1,9 @@
+//Colors
+@import 'client_colors.scss';
 //Media Queries
 @import 'client_style_queries.scss';
+//Fonts
+@import 'client_fontface.scss';
 //Mixins Border-radius
 @mixin border-radius($radius) {
   border-radius: $radius;
@@ -45,6 +49,406 @@
 :-moz-placeholder { /* Firefox 18- */  
   font-size: 0.9rem;
 }
+
 *,
 html,
-body {}
+body {
+  font-family: 'Roboto', sans-serif;  
+}
+//btn-qtm
+.btn-qtm {
+  background: $gray-5;
+  color: $gray-1;
+  &:hover {
+    background: $gray-1;
+    color: $gray-2;
+    transition: 0.3s;
+  }
+}
+//select
+.bootstrap-select {
+  width: 100% !important;
+    button {
+      background: #fff;
+      border-color: #ced4da;
+      color: #495057 !important;
+      &:hover{
+        background: #fff;
+        border-color: #ced4da;
+        color: #495057 !important;
+      }
+    }
+}
+//Form
+form {
+  .form-group {
+    margin-bottom: 0.5rem;
+  }
+  label {
+      font-size: 0.8rem;
+      font-weight: 700;
+  }
+}
+//Table
+.table-qtm {
+  thead {
+    background: $gray-5;
+    color: $gray-1;
+  }
+  td {
+    padding: 0.20rem 0.75rem;
+  }
+  tbody {
+    tr {
+      color: $gray-5;
+      &:nth-of-type(odd) {
+        background-color: $blue-0;        
+      }
+      &:hover {
+        background-color: $blue-3;
+      }
+      td + td {
+        font-weight: 700;
+      }
+    }
+  }  
+}
+#bodyContent {
+  padding: 20px 0;
+}
+//Nav
+.nav-qtm {
+  background: $gray-5;
+}
+//Tabs (User Filter)
+.user_filter {
+  border: 1px solid $gray-1;
+  .nav-link {
+    position: absolute;    
+    right: 15px !important;    
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: $gray-1; 
+    &:before {
+      content: '';
+      position: absolute;      
+      width: 1px;
+      height: 36px;
+      background: $gray-5;
+    }   
+    span {
+      display: none;    
+    }
+    .icon {
+      width: 36px;
+      height: 36px;      
+      margin-left: 10px;
+    }      
+   &:hover {
+    color: $gray-5;
+    transition: 0.3s;
+   }  
+   &.active {
+    position: relative;
+    background: transparent;
+    color: $gray-5;
+    left: 0 !important;  
+    &:before {
+      display: none;
+    }  
+      span {
+        display: inline-block;
+        padding-right: 10px;
+        strong {
+          font-weight: 700;
+        }
+      }
+      .icon {
+        width: 22px;
+        height: 22px; 
+        margin-left: 0;     
+      }    
+    }
+  }
+  #infoUser {    
+    padding-top: 10px;
+    padding-bottom: 10px;    
+    .profileUser {
+      border-bottom: 1px solid $gray-1;
+      margin-bottom: 15px;
+      figure {
+        .imgProfile {
+            width: 54px;
+            height: 54px;
+            @include border-radius(100px);      
+            border: 1px solid $gray-1;
+        }
+      }  
+      .nameUser {
+        font-weight: 700;
+        margin: 10px 0 0 5px;
+        &:before {
+          font-weight: 400;
+          content: 'Cliente:';
+          color: $gray-2;
+          display: block;
+          font-size: 0.8rem;
+          line-height: 0.8rem;
+        }
+      }
+    }
+    .contactUser {
+      list-style: none;
+      margin: 0 0 10px 0;
+      padding: 0;
+        li {
+          font-size: 0.8rem;           
+        }      
+        .icon{
+          margin-right: 5px;
+         }
+    }
+    .btn {
+      width: 100%;
+    }  
+    h3 {
+      font-size: 1.3rem;
+    }
+  }
+  #filterAdv {
+    padding-top: 10px;
+    padding-bottom: 10px;
+      form {
+        label {
+          font-weight: 700;
+        }
+        .btn {
+          width: 100%;
+        }
+      }
+  }
+}
+
+
+//Brief
+.brief {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+    li {
+      position: relative;
+      padding: 0 5px;
+      height: 66px;
+      color: $gray-5;
+      background: $gray-0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 2px;
+      .iconBrief {
+        background: $gray-1;
+        width: 30px;
+        height: 30px;        
+        @include border-radius(100px);
+        @include vertical-align();
+        text-align: center;
+        .icon {
+          width: 20px;
+          height: 20px;
+          @include vertical-align();
+        }        
+      }
+      .infoBrief {        
+        font-size: 0.6rem;
+        width: 145px;
+        height: 40px;
+        @include vertical-align();
+        border-right: 1px solid $gray-2;        
+        &.cl3 {
+          width: 230px;
+          height: 30px;
+          border-right: 0;
+        }
+      }
+      .parcelBrief {
+        font-size: 0.7rem;
+        font-weight: 700;
+        @include vertical-align();        
+        height: 15px;
+      }
+      .dateBrief {
+        background: $gray-1;
+        text-align: center;
+        width: 40px;
+        height: 48px;
+        @include vertical-align();
+          .day{
+            font-weight: 700;
+            display: block;
+            border-bottom: 1px solid $gray-5;
+          }
+      }
+    }     
+}
+
+.businessBrief{
+  li {
+    background: $blue-0;
+    .iconBrief {
+      color: $gray-0;
+      background: $gray-5;
+    }    
+    .dateBrief {
+      color: $gray-0;      
+      background: $gray-5;
+      .day {
+        border-color: $blue-0;
+      }
+    }
+  }      
+}
+
+.activitiesBrief {
+  li {
+    background: $green-0;
+    .iconBrief {
+      color: $green-0;
+      background: $green-2;
+    }    
+    .dateBrief {
+      color: $gray-0;      
+      background: $gray-5;
+      .day {
+        border-color: $blue-0;
+      }
+    }  
+  }      
+}
+
+//infoItem
+.infoItem {
+  border: 1px solid $gray-1;
+  padding: 0 15px 15px 15px;
+  figure {
+    text-align: center;
+  }
+  .nameItem{
+      color: $gray-5;
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+      padding-top: 8px;
+      strong {
+        font-size: 1.4rem;
+        display: block;
+        font-weight: 700;
+      }
+  }
+  .priceItem {
+      background: $gray-5;
+      color: $gray-0;
+      font-size: 0.9rem;
+      line-height: 1.1rem;
+      padding: 8px;
+      @include border-radius(4px);
+      strong {
+        font-size: 1.4rem;
+        display: block;
+        font-weight: 700;
+      }   
+  }
+  .caracteristics {
+    font-size: 0.8rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .rivalItem {
+    tbody {
+      td + td{
+        text-align: center;
+      }
+    }
+  }
+  .rivalPlans {
+    .plansBrief {
+      .infoBrief { 
+         height: 20px;   
+         font-size: 0.9rem;
+         strong {
+          font-weight: 700;
+         }
+      }
+    }    
+  }
+} 
+
+.plansBrief {
+  margin-bottom: 20px;
+  .plNor{
+    background: $ye-0;
+    color: $ye-4;
+    .iconBrief {
+      background: $ye-3;      
+    }
+    a {
+      color: $ye-4;
+    }
+  }
+  .plTop{
+    background: $rd-0;
+    color: $rd-4;
+    .iconBrief {
+      background: $rd-3;      
+    }
+    a {
+      color: $rd-4;
+    }
+  }
+  .plRes{
+    background: $og-0;
+    color: $og-4;
+    .iconBrief {
+      background: $og-3;      
+    }
+    a {
+      color: $og-4;
+    }
+  }
+  .plFac{
+    background: $vi-0;
+    color: $vi-4;
+    .iconBrief {
+      background: $vi-3;      
+    }
+    a {
+      color: $vi-4;
+    }
+  }
+  .plEsp{
+    background: $lm-0;
+    color: $lm-4;
+    .iconBrief {
+      background: $lm-3;      
+    }
+    a {
+      color: $lm-4;
+    }
+  }
+  .plPre{
+    background: $fs-0;
+    color: $fs-4;
+    .iconBrief {
+      background: $fs-3;      
+    }
+    a {
+      color: $fs-4;
+    }
+  }
+}
+
+// lisPlans
+.listPlans {
+  h3 {
+    font-size: 1.3rem;
+  }
+}

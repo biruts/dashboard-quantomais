@@ -40,10 +40,11 @@
     "jquery-validation": "^1.18.0",
     "jquery-viewport-checker": "^1.8.8",
     "node-sass": "^4.9.4",
-    "popper.js": "^1.14.4",
+    "popper.js": "^1.14.6",
     "sass-mediaqueries": "^1.6.1",
     "simple-line-icons": "^2.4.1",
     "smooth-scroll": "^14.2.1",
-    "sticky-content": "^1.0.6"
+    "sticky-content": "^1.0.6",
+    "tooltip.js": "^1.3.1"
   }
 }

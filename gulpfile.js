@@ -39,18 +39,6 @@ gulp.task('sass', function () {
     .pipe(browserSync.stream());
 });
 
-//Images
-// gulp.task('imagemin', function() {
-//     return gulp.src('./dev/images/*')
-//         //.pipe(imagemin())
-//         .pipe(imagemin({
-//   		    interlaced: true,
-//   		    optimizationLevel: 5,
-//   		    progressive: true
-// 		    }))
-//         .pipe(gulp.dest('./dist/images'))
-// });
-
 gulp.task('imagemin', function() {
     return gulp.src('./dev/images/*')
         .pipe(imagemin([
@@ -77,11 +65,12 @@ gulp.task('lib', function(){
   return gulp.src([        
     './node_modules/jquery/dist/jquery.min.js',
     './node_modules/bootstrap/dist/js/bootstrap.min.js',
+    './node_modules/bootstrap/dist/js/bootstrap.bootstrap.bundle.js',
     './node_modules/popper.js/dist/umd/popper.min.js',    
     './node_modules/jquery.easing/jquery.easing.min.js',
     './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
-    './node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js',
-    './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',	
+    './node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js',    
+    './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
 	  './node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',    
     './dev/lib/jquery.form-validator.min.js',
     './dev/lib/slick.js',    
@@ -112,7 +101,7 @@ gulp.task('html', function() {
   .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('default',['compileBootstrap', 'sass', 'lib', 'js']);
+gulp.task('default',['compileBootstrap', 'imagemin', 'sass', 'lib', 'js']);
 
 // Watch
 gulp.task('watch', function() {

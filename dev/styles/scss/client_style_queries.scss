@@ -149,7 +149,39 @@ $mq-desktop           : 1200px !default;
   }
 }
 
+@include retina {
+  .user_filter {
+    .nav-link {
+      font-size: 1.1rem !important;
+      .icon {
+        width: 28px !important;
+        height: 28px !important;      
+        margin-left: 5px;
+        vertical-align: middle;
+      }      
+    }
+  }
+  //Brief
+  .brief {
+    .infoBrief {
+      width: 130px !important;      
+      &.cl3 {
+        width: 200px !important;        
+      }
+    }        
+  }
+}
 
-@include mobile-only() {}
+@include mobile-only() {
+  //Brief
+  .brief {
+    .infoBrief {
+      width: 160px !important;      
+      &.cl3 {
+        width: 250px !important;        
+      }
+    }        
+  }
+}
 @include mobile-portrait-only() {}
 // //END MOBILE
