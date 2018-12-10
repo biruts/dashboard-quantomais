@@ -45,7 +45,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-md-3">
-                    <aside class="user_filter">
+                    <aside class="user_filter mb-4">
                         <ul class="nav nav-pills">
                           <li class="nav-item">
                             <a class="nav-link active" data-toggle="pill" href="#infoUser" title="Informações do Usuário"><span><strong>Informações</strong> do Usuário</span> <i class="icon fas fa-user-circle"></i></a>
@@ -242,11 +242,163 @@
                 <div class="col-12 col-md-6">
                     <div class="listPlans">
                         <h3><strong>Listagem</strong> de Planos</h3>
+
+                        <div class="form-group">
+                            <input type="checkbox" class="form-check-inline" value="all" id="checkAll">
+                        </div>
+
+                        <table class="table table-bordered table-striped table-qtm">
+                            <tbody>
+                                <tr>
+                                  <td>
+                                    
+                                    <div class="row info_plansList">
+                                      <div class="col-12 col-md-8 pr-0 geralItem">
+                                        <div class="check">
+                                          <input type="checkbox" class="form-check-inline" value="all" id="checkItem">
+                                        </div>
+                                        <div class="nameItem">
+                                          Nome do bem ou descrição fica nessa linha pode ser grande
+                                        </div>
+                                        <div class="adm_cate">
+                                          <div class="admItem">Administradora:<span>Mapfre Consórcios</span></div>
+                                          <div class="cateItem">Categoria:<span>Automóveis</span></div>
+                                        </div>
+                                        <div class="dateIten">
+                                          Vencimento: <i class="far fa-calendar-alt"></i><span class="dateStart">10/11/2018</span><i class="far fa-calendar-alt"></i><span class="dateEnd">12/11/2018</span>   
+                                        </div>
+                                        <div class="par_grp">
+                                          <div class="parcels"><span>Parcelas:</span> 
+                                            <ul>
+                                              <li class="valParc">R$ 999.999,99</li>
+                                              <li class="valParc">R$ 999.999,99</li>
+                                              <li class="valParc">R$ 999.999,99</li>
+                                            </ul>
+                                          </div>
+                                          <div class="group">Nº do Grupo: <span class="badge nGroup">95920</span></div>
+                                        </div>
+                                      </div>
+                                      <div class="col-12 col-md-4 val_plans">
+                                          <div class="valList">
+                                            <small>Valor do Crédito:</small>
+                                            R$ 999.999,99
+                                          </div>
+                                          <div class="plansList">
+                                            <small>Tipos de Planos:</small>
+                                            <ul class="nav nav-pills navPlans">
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl1" class="nav-link plTop active">
+                                                <i class="icon fas fa-dollar-sign"></i>
+                                              </a>
+                                            </li>
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl2" class="nav-link plNor">
+                                                <i class="icon fas fa-dollar-sign"></i>
+                                              </a>
+                                            </li>
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl3" class="nav-link plRes">
+                                                <i class="icon fas fa-dollar-sign"></i>
+                                              </a>
+                                            </li>
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl4" class="nav-link plFac">
+                                                <i class="icon fas fa-dollar-sign"></i>
+                                              </a>
+                                            </li>
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl5" class="nav-link plEsp">
+                                                <i class="icon fas fa-dollar-sign"></i>
+                                              </a>
+                                            </li>
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl6" class="nav-link plPre">
+                                                <i class="icon fas fa-dollar-sign"></i>
+                                              </a>
+                                            </li>
+                                            </ul>
+                                          </div> 
+                                      </div>
+                                    </div>
+
+                                    <div class="row table-plansList">
+                                      <div class="col-12 col-md-12 tab-content">
+                                        <div class="tab-pane container active" id="pl1">
+                                            <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
+                                              <thead>
+                                                  <tr>
+                                                    <th scope="col"><span class="month">36</span>MESES</th>
+                                                    <th scope="col"><span class="month">50</span>MESES</th>
+                                                    <th scope="col"><span class="month">60</span>MESES</th>
+                                                    <th scope="col"><span class="month">72</span>MESES</th>
+                                                    <th scope="col"><span class="month">80</span>MESES</th>
+                                                    <th scope="col"><span class="month">100</span>MESES</th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>                                                  
+                                              </tbody>    
+                                          </table>
+                                        </div>
+                                        <div class="tab-pane container" id="pl2">PL2</div>
+                                        <div class="tab-pane container" id="pl3">PL3</div>
+                                        <div class="tab-pane container" id="pl4">PL4</div>
+                                        <div class="tab-pane container" id="pl5">PL5</div>
+                                        <div class="tab-pane container" id="pl6">PL6</div>                                      
+                                      </div>
+                                    </div>
+
+                                  </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+                <!-- End Listagem -->
                 
                 <div class="col-12 col-md-3">
-                    <aside class="infoItem">
+                    <aside class="infoItem mb-4">
                         <div class="itemProfile">
                             <figure>
                                 <img src="images/bem-01.png" alt="Versys X650 ABS" class="img-fluid">

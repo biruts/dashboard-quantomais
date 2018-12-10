@@ -90,7 +90,7 @@ form {
   }
 }
 //Table
-.table-qtm {
+.table-qtm {  
   thead {
     background: $gray-5;
     color: $gray-1;
@@ -213,6 +213,10 @@ form {
     }  
     h3 {
       font-size: 1.3rem;
+      font-weight: 300;
+      strong {
+        font-weight: 700;
+      }
     }
   }
   #filterAdv {
@@ -361,6 +365,10 @@ form {
   }
   h3 {
     font-size: 1.3rem;
+    font-weight: 300;
+    strong {
+      font-weight: 700;
+    }
   }
   .rivalItem {
     tbody {
@@ -448,7 +456,190 @@ form {
 
 // lisPlans
 .listPlans {
+  .table-qtm {    
+    td {      
+      padding: 0.20rem 0.75rem 0;
+    }
+    tbody {
+      tr {        
+        &:hover {
+          background-color: $blue-0;        
+        }
+        td + td {
+          font-weight: 400;
+        }
+      }
+    }
+  }
   h3 {
     font-size: 1.3rem;
+    font-weight: 300;
+    strong {
+      font-weight: 700;
+    }
   }
+  .info_plansList {
+    .check {
+      min-height: 100px;
+      height: 100%;
+      float: left;
+      position: relative;
+      border-right: 1px solid $gray-00;
+      margin-right: 5px;
+      input {
+        @include vertical-align();
+      }
+    }
+    .geralItem {
+      border-right: 1px solid $gray-00;
+      .nameItem {
+        font-size: 0.9rem;
+        font-weight: 700;
+      }
+      .adm_cate {
+        display: flex;
+        font-size: 0.8rem;
+        span {
+          font-weight: 700;
+          margin: 0 5px;
+        }
+      }
+      .dateIten {
+        font-size: 0.8rem;
+        span {
+          font-weight: 700;
+          margin: 0 5px;
+        }
+      }
+      .par_grp {
+        .parcels {
+          float: left;
+          font-size: 0.8rem;
+          span {
+            display: block;
+          }
+          ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li {              
+              display: inline-block;
+              font-weight: 700;
+              background: $gray-5;
+              color: $gray-0; 
+              padding: 2px 5px;
+              @include border-radius(3px);
+            }
+          }
+        }
+        .group {
+          float: right;
+          margin-right: 10px;
+          font-size: 0.8rem;
+          span {
+            display: block;
+            &.badge {
+              font-size: 0.9rem;
+              font-weight: 700;
+              background: $gray-5;
+              color: $gray-0; 
+              padding: 5px 2px;
+            }
+          }
+        }
+      }
+    }  
+    .val_plans {     
+      min-height: 100px;
+      height: 100%;      
+      padding-left: 10px;
+      padding-right: 5px;
+      .valList {
+        font-weight: 700;
+        font-size: 1.4rem;
+        small {
+          display: block;
+          font-size: 0.8rem;
+        }
+      }
+    }    
+  }
+  .navPlans {
+    .nav-link {
+      margin-right: 7px;
+      padding: 3px 0 0 0;            
+      font-size: 0.9rem;
+      width: 26px;
+      height: 26px;
+
+      @include border-radius(100px);          
+      text-align: center; 
+    }
+  }
+}
+.navPlans {
+  .nav-link{
+    &.active {    
+      background-color: $gray-5 !important;
+    }
+  }
+}
+.plTop{
+  background: $ye-3;
+  color: $ye-4;    
+}
+.plNor{
+  background: $rd-3;  
+  color: $rd-4;  
+}
+.plRes{
+  background: $og-3;
+  color: $og-4;  
+}
+.plFac{
+  background: $vi-3;
+  color: $vi-4;  
+}
+.plEsp{
+  background: $lm-3;
+  color: $lm-4;  
+}
+.plPre{
+  background: $fs-3;
+  color: $fs-4;  
+}
+
+//table-plansList
+.table-plansList {
+    margin-right: -13px;
+    margin-left: -13px;
+  .tab-content {
+    padding: 0;   
+      .tab-pane {
+        padding: 0;        
+      }
+  }
+}
+
+.table-qtm-list {
+  margin-top: 10px;
+  margin-bottom: 0;            
+  thead {
+    background: $gray-5 !important;
+    color: $gray-1 !important;
+  }
+  td {
+    padding: 0.20rem 0.75rem;
+  }
+  tbody {
+    tr {
+      color: $gray-5;
+      &:nth-of-type(odd) {
+        background-color: $blue-0;        
+      }
+      &:hover {
+        background-color: $blue-3;
+      }      
+    }
+  }  
 }
