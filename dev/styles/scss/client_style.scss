@@ -256,6 +256,7 @@ form {
         @include border-radius(100px);
         @include vertical-align();
         text-align: center;
+        border: 1px solid $gray-2;
         .icon {
           width: 20px;
           height: 20px;
@@ -372,6 +373,9 @@ form {
   }
   .rivalItem {
     tbody {
+      td {
+        font-size: 0.9rem;
+      }
       td + td{
         text-align: center;
       }
@@ -456,7 +460,7 @@ form {
 
 // lisPlans
 .listPlans {
-  .table-qtm {    
+  .table-qtm {       
     td {      
       padding: 0.20rem 0.75rem 0;
     }
@@ -515,6 +519,7 @@ form {
         .parcels {
           float: left;
           font-size: 0.8rem;
+          margin-bottom: 6px;
           span {
             display: block;
           }
@@ -571,7 +576,7 @@ form {
       font-size: 0.9rem;
       width: 26px;
       height: 26px;
-
+      border: 1px solid $gray-2;
       @include border-radius(100px);          
       text-align: center; 
     }
@@ -579,7 +584,9 @@ form {
 }
 .navPlans {
   .nav-link{
-    &.active {    
+    &.active,
+    &:hover {    
+      color: $gray-0 !important;
       background-color: $gray-5 !important;
     }
   }
@@ -625,14 +632,61 @@ form {
   margin-top: 10px;
   margin-bottom: 0;            
   thead {
-    background: $gray-5 !important;
-    color: $gray-1 !important;
+    tr {
+      background: $gray-5 !important;
+      color: $gray-1 !important;
+      .icon {
+        font-size: 1.4rem;
+        vertical-align: middle;
+        margin-right: 5px;
+      }
+      &.plNor {
+        background: $ye-1 !important;
+        color: $ye-4 !important;        
+      }
+      &.plTop {
+        background: $rd-1 !important;
+        color: $rd-4 !important;        
+      }
+      &.plRes {
+        background: $og-1 !important;
+        color: $og-4 !important;        
+      }
+      &.plFac {
+        background: $vi-1 !important;
+        color: $vi-4 !important;        
+      }
+      &.plEsp {
+        background: $lm-1 !important;
+        color: $lm-4 !important;        
+      }
+      &.plPre {
+        background: $fs-1 !important;
+        color: $fs-4 !important;        
+      }
+      th {
+        font-weight: 300;
+        font-size: 1.0rem;
+        line-height: 1.0rem;
+        padding-top: 0.4rem;
+        padding-bottom: 0.4rem;
+        strong {
+          font-weight: 700;
+        }
+        span {
+          display: block;
+          font-weight: 700;
+          font-size: 0.9rem;
+        }
+      }
+    }    
   }
   td {
-    padding: 0.20rem 0.75rem;
+    padding: 0.5rem 0 !important;
+    font-size: 0.59rem;
   }
   tbody {
-    tr {
+    tr {      
       color: $gray-5;
       &:nth-of-type(odd) {
         background-color: $blue-0;        

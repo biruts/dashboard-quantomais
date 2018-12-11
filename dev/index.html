@@ -286,7 +286,7 @@
                                           <div class="plansList">
                                             <small>Tipos de Planos:</small>
                                             <ul class="nav nav-pills navPlans">
-                                              <li class="nav-item"><a data-toggle="pill" href="#pl1" class="nav-link plTop active">
+                                              <li class="nav-item"><a data-toggle="pill" href="#pl1" class="nav-link plTop">
                                                 <i class="icon fas fa-dollar-sign"></i>
                                               </a>
                                             </li>
@@ -317,16 +317,34 @@
 
                                     <div class="row table-plansList">
                                       <div class="col-12 col-md-12 tab-content">
-                                        <div class="tab-pane container active" id="pl1">
+                                        <div class="tab-pane container" id="pl1"> <!-- ativa a tab -->
                                             <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
                                               <thead>
+                                                  <tr class="plNor">
+                                                    <th colspan="6" class="text-left">
+                                                      <i class="icon fas fa-dollar-sign"></i> <strong>Plano</strong> Normal
+                                                      <a href="#"></a>
+                                                    </th>
+                                                  </tr>
                                                   <tr>
-                                                    <th scope="col"><span class="month">36</span>MESES</th>
-                                                    <th scope="col"><span class="month">50</span>MESES</th>
-                                                    <th scope="col"><span class="month">60</span>MESES</th>
-                                                    <th scope="col"><span class="month">72</span>MESES</th>
-                                                    <th scope="col"><span class="month">80</span>MESES</th>
-                                                    <th scope="col"><span class="month">100</span>MESES</th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="check36">36</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA50">50</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA60">60</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA72">72</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA80">80</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA100">100</span>MESES
+                                                    </th>
                                                   </tr>
                                               </thead>
                                               <tbody>
@@ -381,11 +399,416 @@
                                               </tbody>    
                                           </table>
                                         </div>
-                                        <div class="tab-pane container" id="pl2">PL2</div>
-                                        <div class="tab-pane container" id="pl3">PL3</div>
-                                        <div class="tab-pane container" id="pl4">PL4</div>
-                                        <div class="tab-pane container" id="pl5">PL5</div>
-                                        <div class="tab-pane container" id="pl6">PL6</div>                                      
+                                        <div class="tab-pane container" id="pl2">
+                                          <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
+                                              <thead>
+                                                  <tr class="plTop">
+                                                    <th colspan="6" class="text-left">
+                                                      <i class="icon fas fa-dollar-sign"></i> <strong>Plano</strong> Top
+                                                      <a href="#"></a>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="check36">36</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA50">50</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA60">60</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA72">72</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA80">80</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA100">100</span>MESES
+                                                    </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>                                                  
+                                              </tbody>    
+                                          </table>
+                                        </div>
+                                        <div class="tab-pane container" id="pl3">
+                                          <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
+                                              <thead>
+                                                  <tr class="plRes">
+                                                    <th colspan="6" class="text-left">
+                                                      <i class="icon fas fa-dollar-sign"></i> <strong>Plano</strong> Residual
+                                                      <a href="#"></a>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="check36">36</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA50">50</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA60">60</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA72">72</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA80">80</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA100">100</span>MESES
+                                                    </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>                                                  
+                                              </tbody>    
+                                          </table>
+                                        </div>
+                                        <div class="tab-pane container" id="pl4">
+                                          <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
+                                              <thead>
+                                                  <tr class="plFac">
+                                                    <th colspan="6" class="text-left">
+                                                      <i class="icon fas fa-dollar-sign"></i> <strong>Plano</strong> Fácil
+                                                      <a href="#"></a>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="check36">36</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA50">50</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA60">60</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA72">72</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA80">80</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA100">100</span>MESES
+                                                    </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>                                                  
+                                              </tbody>    
+                                          </table>
+                                        </div>
+                                        <div class="tab-pane container" id="pl5">
+                                          <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
+                                              <thead>
+                                                  <tr class="plEsp">
+                                                    <th colspan="6" class="text-left">
+                                                      <i class="icon fas fa-dollar-sign"></i> <strong>Plano</strong> Residual
+                                                      <a href="#"></a>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="check36">36</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA50">50</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA60">60</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA72">72</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA80">80</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA100">100</span>MESES
+                                                    </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>                                                  
+                                              </tbody>    
+                                          </table>
+                                        </div>
+                                        <div class="tab-pane container" id="pl6">
+                                          <table class="table table-striped table-bordered text-center table-qtm table-qtm-list">
+                                              <thead>
+                                                  <tr class="plPre">
+                                                    <th colspan="6" class="text-left">
+                                                      <i class="icon fas fa-dollar-sign"></i> <strong>Plano</strong> Residual
+                                                      <a href="#"></a>
+                                                    </th>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="check36">36</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA50">50</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA60">60</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA72">72</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA80">80</span>MESES
+                                                    </th>
+                                                    <th scope="col"><span class="month">
+                                                      <input type="checkbox" class="form-check-inline" value="all" id="checkA100">100</span>MESES
+                                                    </th>
+                                                  </tr>
+                                              </thead>
+                                              <tbody>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>001 a 001: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                    <td>002 a 008: R$ 745,88</td>
+                                                  </tr>                                                  
+                                              </tbody>    
+                                          </table>
+                                        </div>                                      
                                       </div>
                                     </div>
 
