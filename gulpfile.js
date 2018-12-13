@@ -26,11 +26,8 @@ gulp.task('compileBootstrap', function() {
 gulp.task('sass', function () {
   return gulp.src([
   	'./dev/styles/scss/**/*.scss',  	
-    './node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss',
-  	'./node_modules/bootstrap-select/dist/css/bootstrap-select.css',      	
-    './node_modules/animate.css/animate.css',      
-    './dev/lib/slick.css',
-    './node_modules/ekko-lightbox/dist/ekko-lightbox.css',  
+    './node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss',  	    
+    './node_modules/bootstrap-select/sass/bootstrap-select.scss',      	    
   	])
     .pipe(sass().on('error', sass.logError))
     .pipe(uglifycss())
@@ -63,21 +60,12 @@ gulp.task('fonts', function() {
 //Libs
 gulp.task('lib', function(){
   return gulp.src([        
-    './node_modules/jquery/dist/jquery.min.js',
-    './node_modules/bootstrap/dist/js/bootstrap.min.js',
-    './node_modules/bootstrap/dist/js/bootstrap.bootstrap.bundle.js',
-    './node_modules/popper.js/dist/umd/popper.min.js',    
-    './node_modules/jquery.easing/jquery.easing.min.js',
-    './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
-    './node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js',    
+    './node_modules/jquery/dist/jquery.min.js',    
+    './node_modules/bootstrap/dist/js/bootstrap.bundle.js',    
     './node_modules/bootstrap-select/dist/js/bootstrap-select.min.js',
-	  './node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',    
-    './dev/lib/jquery.form-validator.min.js',
-    './dev/lib/slick.js',    
+    './node_modules/@fortawesome/fontawesome-free/js/all.min.js',
+    './node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js',            
     './node_modules/ekko-lightbox/dist/ekko-lightbox.min.js',        
-    './node_modules/jquery-validation/dist/jquery.validate.min.js',
-    './node_modules/jquery-mask-plugin/dist/jquery.mask.min.js',    
-    './node_modules/smooth-scroll/dist/smooth-scroll.min.js',
     ])
   .pipe(concat('lib.js'))
   .pipe(gulp.dest('./dist/js/'));
